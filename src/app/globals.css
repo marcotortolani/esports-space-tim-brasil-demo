@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Druk';
+  src: url('../../public/assets/fonts/Druk.ttc') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CountachBoldItalic';
+  src: url('../../public/assets/fonts/Countach-BoldItalic.otf') format('opentype');
+  font-display: swap;
+}
+
+.post-parsed {
+  font-weight: 200;
+}
+.post-parsed p {
+  margin: 1rem 0;
+}
+.post-parsed p span {
+  background-color: none;
+}
+.post-parsed img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.6rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.post-parsed ul li,
+ol li {
+  margin: 1rem 0;
+  font-style: italic;
+  list-style: none;
+  font-weight: 300;
+}
+
+@media (min-width: 550px) {
+  .post-parsed img {
+    border-radius: 0.8rem;
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .post-parsed p {
+    margin: 2rem 0;
+  }
+
+  .post-parsed img {
+    border-radius: 1rem;
+    margin: 3rem 0;
+  }
+}
