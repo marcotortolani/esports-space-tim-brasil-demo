@@ -90,7 +90,7 @@ export function StyledTab({ title, icon, href, currentPath, previousPath }) {
     >
       <Link
         className=" w-full h-full flex items-center justify-center"
-        href={href === dictionary['Back'] ? previousPath[0] : href}
+        href={href === "back" ? previousPath[0] : href}
         aria-label={title}
       >
         <IconComponent />
