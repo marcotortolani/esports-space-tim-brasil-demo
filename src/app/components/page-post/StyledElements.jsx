@@ -63,12 +63,13 @@ function Bajada({ content }) {
 }
 
 function FeaturedImage({ image }) {
+  const imageUrl = image.replaceAll(' ', '')
   return (
     <div className=" relative w-full aspect-video">
       <Image
         className=" w-full h-auto object-center object-cover rounded-md md:rounded-lg lg:rounded-xl"
         fill
-        src={image}
+        src={imageUrl}
         alt="Featured Image"
       />
     </div>

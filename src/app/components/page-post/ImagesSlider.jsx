@@ -66,7 +66,7 @@ export default function ImagesSlider({
             >
               <Image
                 className=" w-full aspect-video object-cover rounded-lg"
-                src={image}
+                src={image?.replaceAll(' ', '')}
                 fill
                 alt={`Imagen Slider ${index}`}
               />
