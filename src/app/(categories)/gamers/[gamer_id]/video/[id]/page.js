@@ -12,7 +12,7 @@ export default async function PostsGamerPage({ params }) {
 
   return (
     <VideoPost dataVideo={dataVideo} vimeoNumber={vimeoNumber}>
-      <SectionRecommended category={cat.gaming} qty={4} />
+      <SectionRecommended category={cat.gamers} qty={4} />
     </VideoPost>
   )
 }

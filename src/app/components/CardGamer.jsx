@@ -9,7 +9,7 @@ export function CardGamer({ path, gamerData, miniCard }) {
   return (
     <Link
       className="z-30 relative w-full h-full flex justify-center items-center hover:cursor-pointer  "
-      href={path + `/${gamerData.id}`}
+      href={`/gamers/${gamerData.id}`}
     >
       <div
         className={`${

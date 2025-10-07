@@ -76,5 +76,6 @@
   "pop": "pop",
   "search": "search",
   "favorites": "favorites",
-  "videos": "videos"
+  "videos": "videos",
+  "video": "video"
 }
