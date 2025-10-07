@@ -8,7 +8,7 @@ import StyledElements from './StyledElements'
 
 import { getImageHeaderPost } from '@/utils/functions'
 
-export default async function VideoPost({ dataVideo, vimeoNumber, children }) {
+export default async function VideoPost({ dataVideo, children }) {
   const image = getImageHeaderPost(dataVideo)
   const dataFavourite = {
     id: dataVideo?.id,
@@ -17,6 +17,10 @@ export default async function VideoPost({ dataVideo, vimeoNumber, children }) {
     excerpt: dataVideo?.excerpt.rendered,
     images: [image],
   }
+
+  const vimeoNumber = dataVideo?.video?.url
+    ?.split('/')
+    .pop(dataVideo.video.url.split('/').length - 1)
 
   const { elements } = processDataRendered(dataVideo?.excerpt.rendered)
 

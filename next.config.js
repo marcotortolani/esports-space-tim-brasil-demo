@@ -12,7 +12,13 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 's3.sa-east-1.amazonaws.com',
+        hostname: 'vimeo.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'player.vimeo.com',
         port: '',
         pathname: '/**',
       },

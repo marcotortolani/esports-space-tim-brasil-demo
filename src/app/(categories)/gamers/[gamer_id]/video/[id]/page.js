@@ -1,17 +1,15 @@
 import React from 'react'
 import { CAT_GAMERS as cat } from '@/utils/static_data'
 import { getDataPostById } from '@/services/api-content'
-import { getVimeoNumber } from '@/utils/functions'
 import VideoPost from '@/app/components/page-post/VideoPost'
 import SectionRecommended from '@/app/components/SectionRecommended'
 
 export default async function PostsGamerPage({ params }) {
   const { id } = params
   const dataVideo = await getDataPostById(id)
-  const vimeoNumber = getVimeoNumber({ string: dataVideo?.content.rendered })
 
   return (
-    <VideoPost dataVideo={dataVideo} vimeoNumber={vimeoNumber}>
+    <VideoPost dataVideo={dataVideo}>
       <SectionRecommended category={cat.gamers} qty={4} />
     </VideoPost>
   )
