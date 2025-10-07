@@ -17,6 +17,8 @@ const poppins = Poppins({
 export default async function SectionRecommended({ category, qty }) {
   const categoryID = await getCategoryId(category.wpSlug)
 
+  console.log(categoryID)
+
   return (
     <section
       className={

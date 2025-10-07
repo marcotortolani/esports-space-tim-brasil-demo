@@ -11,7 +11,7 @@ export default async function VideoPageByID({ params }) {
 
   return (
     <VideoPost dataVideo={dataVideo}>
-      <SectionRecommended category={cat.gaming} qty={4} />
+      <SectionRecommended category={cat.gamers} qty={6} />
     </VideoPost>
   )
 }

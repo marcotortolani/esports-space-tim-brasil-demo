@@ -20,9 +20,6 @@ export default function page({ params }) {
   const [page, setPage] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
 
-  console.log(gamerPosts)
-  console.log(gamerName)
-
   const handleNextPage = () => {
     if (page < totalPages) {
       setPage(page + 1)

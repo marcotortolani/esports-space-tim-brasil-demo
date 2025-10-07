@@ -1,5 +1,5 @@
 import React from 'react'
-import { CAT_GAMERS as cat } from '@/utils/static_data'
+import { CAT_EDITORIAL as cat } from '@/utils/static_data'
 import { getDataPostById } from '@/services/api-content'
 import VideoPost from '@/app/components/page-post/VideoPost'
 import SectionRecommended from '@/app/components/SectionRecommended'
@@ -10,7 +10,7 @@ export default async function PostsGamerPage({ params }) {
 
   return (
     <VideoPost dataVideo={dataVideo}>
-      <SectionRecommended category={cat.gamers} qty={4} />
+      <SectionRecommended category={cat.videogames} qty={6} />
     </VideoPost>
   )
 }

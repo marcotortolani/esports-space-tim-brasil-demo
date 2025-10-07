@@ -8,7 +8,7 @@ export default function page({ params }) {
 
   return (
     <PagePost id={id}>
-      <SectionRecommended category={cat.editorial} qty={4} />
+      <SectionRecommended category={cat.editorial} qty={6} />
     </PagePost>
   )
 }
