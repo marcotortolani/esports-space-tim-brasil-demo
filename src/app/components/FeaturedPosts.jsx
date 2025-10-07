@@ -56,12 +56,12 @@ export default async function FeaturedPosts({
             }  row-span-1 w-full h-[30vh] min-h-[180px] max-h-[220px]  relative flex flex-col items-center justify-center `}
           >
             <div className=" relative z-0 w-full h-full rounded-lg ">
-              {post.images.length > 0 ? (
+              {post?.featuredImage ? (
                 <Image
                   className={` relative w-full h-full object-center object-cover rounded-[inherit]`}
                   width={220}
                   height={220}
-                  src={post.images[0]}
+                  src={post?.featuredImage}
                   alt={`Image ${post.title}`}
                 />
               ) : (

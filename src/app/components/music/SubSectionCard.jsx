@@ -35,12 +35,12 @@ export default async function SubSectionCard({
       <div
         className={` relative w-full h-full  rounded-[inherit] overflow-hidden`}
       >
-        {post?.images?.length > 0 ? (
+        {post?.featuredImage ? (
           <Image
             className={`  w-full h-full  object-center object-cover  rounded-[inherit]`}
             fill={true}
             sizes="(max-width: 350px)"
-            src={post?.images[0]}
+            src={post?.featuredImage}
             alt={`Image ${post?.title}`}
           />
         ) : (

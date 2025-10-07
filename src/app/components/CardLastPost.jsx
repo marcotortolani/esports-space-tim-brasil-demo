@@ -18,13 +18,13 @@ export default function CardLastPost({ post, index, titleOnly }) {
         } relative w-full h-fit p-2 md:p-3 flex flex-col justify-center gap-4 rounded-lg md:rounded-xl overflow-hidden`}
       >
         <div className="  relative w-full aspect-[3/2] rounded-[inherit] overflow-hidden ">
-          {post?.images.length > 0 ? (
+          {post?.featuredImage ? (
             <Image
               className={` w-auto h-full md:w-full md:h-auto object-cover rounded-[inherit] `}
               fill
               priority={index === 0}
               sizes="(max-width: 350px)"
-              src={post?.images[0]}
+              src={post?.featuredImage}
               alt={`Image ${post?.title}`}
             />
           ) : (

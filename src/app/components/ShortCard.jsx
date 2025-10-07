@@ -22,12 +22,12 @@ export default function ShortCard({ index, qty, post, miniCard, accentColor }) {
           miniCard ? ' h-3/4 ' : 'h-5/6'
         } relative w-full  rounded-[inherit]`}
       >
-        {post.images.length > 0 ? (
+        {post?.featuredImage ? (
           <Image
             className={` absolute w-full h-full  object-center object-cover  rounded-[inherit]`}
             fill={true}
             sizes="(max-width: 350px)"
-            src={post.images[0]}
+            src={post?.featuredImage}
             alt={`Image ${post.title}`}
           />
         ) : (

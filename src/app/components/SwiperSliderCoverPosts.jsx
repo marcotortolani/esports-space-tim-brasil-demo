@@ -118,10 +118,10 @@ export default function SwiperSliderCoverPosts({
                 xl:w-full  lg:max-w-[500px] aspect-[8/9] md:rounded-xl lg:rounded-2xl`}
             >
               <div className=" z-0 relative top-0 w-full h-full overflow-hidden rounded-[inherit]  ">
-                {post.images ? (
+                {post?.featuredImage ? (
                   <Image
                     className={` z-0 relative w-full h-auto lg:w-auto lg:h-full object-cover rounded-[inherit]`}
-                    src={post.images[0]}
+                    src={post?.featuredImage}
                     fill
                     priority={index === 0}
                     sizes="(max-width: 90vw)"

@@ -15,12 +15,12 @@ export default function CardLastModernPost({ post, titleOnly, i = 0 }) {
         } relative w-[90%] lg:w-[95%] aspect-square md:aspect-[4/3] lg:aspect-[5/4] xl:aspect-[4/3]  flex flex-col items-center rounded-xl lg:rounded-2xl`}
       >
         <div className="  relative w-full h-4/5  rounded-[inherit]">
-          {post?.images.length > 0 ? (
+          {post?.featuredImage ? (
             <Image
               className={` w-auto h-full p-1 md:p-2 md:w-full md:h-auto object-cover rounded-[inherit]`}
               fill={true}
               sizes="(max-width: 350px)"
-              src={post?.images[0]}
+              src={post?.featuredImage}
               alt={`Image ${post?.title}`}
             />
           ) : (

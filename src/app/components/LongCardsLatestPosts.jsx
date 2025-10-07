@@ -96,12 +96,12 @@ export default function LongCardsLatestPosts({
               <div
                 className={`relative w-full h-2/3 overflow-hidden rounded-lg md:rounded-xl lg:rounded-2xl`}
               >
-                {post?.images?.length > 0 ? (
+                {post?.featuredImage ? (
                   <Image
                     className={` absolute w-full h-full  object-center object-cover rounded-[inherit]`}
                     fill
                     sizes="(max-width: 350px)"
-                    src={post?.images[0]}
+                    src={post?.featuredImage}
                     alt={`Image ${post?.title}`}
                   />
                 ) : (

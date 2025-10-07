@@ -69,12 +69,12 @@ export default function SliderMiniVideoPosts({
                 <div
                   className={` relative z-0 w-full h-full border-white border-2  rounded-lg md:rounded-xl overflow-hidden `}
                 >
-                  {post.images.length > 0 ? (
+                  {post?.featuredImage ? (
                     <Image
                       className={` w-full h-auto object-cover rounded-[inherit]`}
                       fill={true}
                       sizes="(max-width: 250px)"
-                      src={post.images[0]}
+                      src={post?.featuredImage}
                       alt="Imagen"
                     />
                   ) : (
