@@ -31,7 +31,7 @@ export default function GamersPage() {
       const gamersID = await getCategoryId(cat?.gamers.wpSlug)
 
       const { data, pages } = await getData(
-        `categories?parent=${gamersID}&per_page=20&page=${page}`
+        `categories?parent=${gamersID}&per_page=24&page=${page}`
       )
       setGamersData(data)
       setTotalPages(parseInt(pages))
